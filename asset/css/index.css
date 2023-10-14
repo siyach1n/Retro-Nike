@@ -43,48 +43,90 @@ html,body{
 }
 
 #elems{
-    background-color: red;
+    /* background-color: red; */
     height: 430px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 40px 60px;
+
 }
 
 #elem1{
-    height: 100%;
     width: 30%;
-    background-color: blue;
+    height: 100%;
+    /* background-color: blue; */
 }
 
-#elem1 #image>img {
-    height: 260px;
-    width: 100%;
-    object-fit: cover;
+#elem2{
+    width: 30%;
+    height: 100%;
+    padding: 20px 60px;
+    text-align: center;
+        /* background-color: blue; */
+    border-right: 2px solid #969595 ;
+    border-left: 2px solid #969595;
 }
-#image:hover img{
-    scale: 1.2;
+
+#elem3{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
 }
 
 #elem1 #image-div{
-        height: 60%;
-        width: 100%;
-        overflow: hidden;
-}
-
-#elem2 {
-    height: 100%;
-    width: 30%;
-    background-color: blue;
-}
-
-#elem3 {
-    height: 100%;
-        width: 30%;
-        background-color: blue;
-}
-
-#elem3 #image>img {
-    height: 255px;
+    height: 70%;
     width: 100%;
+    overflow: hidden;
+}
+
+#elem-img{
+        height: 108%;
+        width: 100%;
+}
+image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#image-div:hover img{
+    scale: 1.1;
+}    
+
+
+#elem3 #image-div {
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#elems h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+
+#elems h4 span{
+        background-color: #b43b12;
+        color: #C4BCB3;
+        font-weight: 100;
+        font-size: 15px;
+        padding: 3px;
+        border-radius: 5px;
+        margin-left: 10px;
+}
+
+ #elems p {
+    font-size: 20px;
+    font-family: Domaine Display Cyr;
+    font-weight: 100;
+    color: #2e2e2e;
+ }
+
+#elems #elem2 h2{
+    font-family: canopee;
 }
