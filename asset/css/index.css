@@ -3,17 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --bgprimarycolor:#C4BCB3;
+    --secondarylinecolor:#969595;
+    --textbgcolor:#1a1a22;
+    --textprimecolor:#1c1c19;
+}
 
 html,body{
     height: 100%;
     width: 100%;
 }
+#main{
+    background-color:var(--textprimecolor);
+    overflow-x: hidden;
+
+}
 
 #page1{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
-    background-color: #C4BCB3;
+    background-color:var(--bgprimarycolor);
     position: relative;
+    overflow: hidden;
+}
+
+#page1 #nav h5{
+    font-family: Domaine Display Cyr;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 
 #nav{
@@ -23,7 +41,7 @@ html,body{
     padding: 0 30px;
     align-items: center;  
     justify-content: space-between;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid var(--secondarylinecolor);
 }
 
 #nav > img{
@@ -61,11 +79,11 @@ html,body{
 #elem2{
     width: 30%;
     height: 100%;
-    padding: 20px 60px;
+    padding: 120px 60px;
     text-align: center;
         /* background-color: blue; */
-    border-right: 2px solid #969595 ;
-    border-left: 2px solid #969595;
+    border-right: 2px solid var(--secondarylinecolor) ;
+    border-left: 2px solid var(--secondarylinecolor);
 }
 
 #elem3{
@@ -112,7 +130,7 @@ image-div img{
 
 #elems h4 span{
         background-color: #b43b12;
-        color: #C4BCB3;
+        color: var(--bgprimarycolor);
         font-weight: 100;
         font-size: 15px;
         padding: 3px;
@@ -127,6 +145,33 @@ image-div img{
     color: #2e2e2e;
  }
 
-#elems #elem2 h2{
+#elems #elem2 h1,h3{
+    font-size: 35px;
     font-family: canopee;
+}
+
+#elems #elem2 p{
+    
+    font-family: Domaine Display Cyr;
+}
+
+#page1 #cap-div h1{
+    color: var(--bgprimarycolor);
+    background-color: var(--textbgcolor);
+    text-align: center;
+    font-size:305px;
+    font-family: canopee;
+    font-weight: 100;
+    line-height: 350px;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 4%;
+    
+    
+}
+
+#page2{
+    height: 150vh;
+    width: 100%;
+    background-color: var(--bgprimarycolor);
 }
